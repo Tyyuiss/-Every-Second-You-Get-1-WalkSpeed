@@ -3,7 +3,7 @@
 
 _G.config = {   
     ['Farm'] = true, -- Enable/Disable the Farm
-	['AutoRebirth'] = true, -- Whether or not it rebirths automatically for you 🔄️
+    ['AutoRebirth'] = true, -- Whether or not it rebirths automatically for you 🔄️
     ['Win_POS'] = Vector3.new(13890, 6, -18553), -- 600th Rebirth Teleporter | You can change manually but it will take work
 
     ['PlaceId'] = 12742233841
