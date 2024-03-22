@@ -5,7 +5,12 @@ _G.config = {
     ['Farm'] = true, -- Enable/Disable the Farm
     ['AutoRebirth'] = true, -- Whether or not it rebirths automatically for you 🔄️
     ['Win_POS'] = Vector3.new(13890, 6, -18553), -- 600th Rebirth Teleporter | You can change manually but it will take work
-
+	
+	['FPS'] = {
+		['Unlock FPS'] = true,
+		['FPS Cap'] = 120
+	},
+	
     ['PlaceId'] = 12742233841
 }
 
@@ -28,6 +33,10 @@ _G.config = {
 -- DO NOT EDIT THIS CODE OR IT WILL BREAK MOST LIKELY
 
 local Player = game:GetService('Players').LocalPlayer
+
+if _G.config['FPS']['Unlock FPS'] then
+	setfpscap(_G.config['FPS']['FPS Cap'])
+end
 
 if (game.PlaceId == _G.config['PlaceId']) then
     if _G.config['Farm'] then
